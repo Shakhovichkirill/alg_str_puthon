@@ -4,7 +4,6 @@
 n = int(input("Введите количество эелментов: "))
 list_n = []
 max_ = 0
-z = 0
 m = 0
 for i in range(n):
     a = int(input("Введите число: "))
@@ -17,7 +16,7 @@ for j in list_n:
         s = j % 10
         j = j // 10
         z += s
-    if z > max_:
-        max_ = z
-        num = m
+        if z > max_:
+            max_ = z
+            num = m
 print(f'Наибольшая сумма цифр {max_} у числа {num}')
