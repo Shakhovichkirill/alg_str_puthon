@@ -4,12 +4,12 @@
 # Объяснить полученный результат.
 
 a = 5
-print("%d = %s" % (a, bin(a)[2:]))
+print(a, "=", bin(a)[2:])
 b = 6
-print("%d = %s" % (b, bin(b)[2:]))
+print(b, "=", bin(b)[2:])
 
-print("%d & %d = %d (%s)" % (a, b, a & b, bin(a & b)[2:]))
-print("%d | %d = %d (%s)" % (a, b, a | b, bin(a | b)[2:]))
-print("%d ^ %d = %d (%s)" % (a, b, a ^ b, bin(a ^ b)[2:]))
-print("%d << 2 = %d (%s)" % (a, a << 2, bin(a << 2)[2:]))
-print("%d >> 2 = %d (%s)" % (a, a >> 2, bin(a >> 2)[2:]))
+print(a, "&", b, "=", a & b, "->", bin(a & b)[2:])
+print(a, "|", b, "=", a | b, "->", bin(a | b)[2:])
+print("~", a, "=", ~a, "->", bin(~a))
+print(a, "<<", 2, "=", a << 2, "->", bin(a << 2)[2:])
+print(a, ">>", 2, "=", a >> 2, "->", bin(a >> 2)[2:])
